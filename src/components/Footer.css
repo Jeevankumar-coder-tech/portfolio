@@ -1,0 +1,127 @@
+/* Footer Component Styles */
+
+.footer-wrap {
+  background: var(--bg-ribbon);
+  color: #ffffff;
+  padding: 3.5rem 0 2rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-top-tier {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-brand-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--bg-ribbon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.05rem;
+  font-family: var(--font-heading);
+}
+
+.footer-brand-text {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.footer-socials-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.footer-socials-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-right: 0.4rem;
+}
+
+.footer-social-link {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.2s ease;
+}
+
+.footer-social-link:hover {
+  background: var(--color-coral);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.footer-scroll-top-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.footer-scroll-top-btn:hover {
+  background: var(--color-coral);
+  border-color: var(--color-coral);
+  transform: translateY(-2px);
+}
+
+.footer-bottom-tier {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.75rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-copyright {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer-legal-links span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-legal-divider {
+  color: rgba(255, 255, 255, 0.3);
+}

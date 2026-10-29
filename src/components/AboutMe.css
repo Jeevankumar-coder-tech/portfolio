@@ -1,0 +1,161 @@
+/* AboutMe Component Styles */
+
+.about-section {
+  background: #ffffff;
+}
+
+.about-title {
+  font-size: 2.5rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-block-heading {
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.about-bio-text {
+  color: var(--color-slate);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.about-bio-text + .about-bio-text {
+  margin-top: 0.85rem;
+}
+
+.about-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.94rem;
+  color: var(--color-slate);
+}
+
+.about-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-contact-icon {
+  color: var(--color-coral);
+}
+
+.about-stats-box {
+  display: flex;
+  gap: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-stat-val {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  line-height: 1;
+}
+
+.about-stat-val span {
+  color: var(--color-coral);
+  font-size: 1rem;
+  margin-left: 2px;
+}
+
+.about-stat-label {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-top: 0.2rem;
+}
+
+.about-center-col {
+  display: flex;
+  justify-content: center;
+}
+
+.about-right-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.about-service-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.about-service-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--color-coral-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-service-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.35rem;
+}
+
+.about-service-desc {
+  color: var(--color-slate);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.about-tech-stack {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.about-tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.about-tech-chip {
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: rgba(255, 107, 74, 0.08);
+  color: var(--color-navy);
+  border: 1px solid rgba(255, 107, 74, 0.25);
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.about-tech-chip:hover {
+  background: rgba(255, 107, 74, 0.16);
+  border-color: var(--color-coral);
+  transform: translateY(-1px);
+}

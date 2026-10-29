@@ -1,0 +1,288 @@
+/* ProjectPreviews Component Styles */
+
+/* 1. HyperStream Preview */
+.preview-hyperstream {
+  background: #0a1128;
+  border-bottom: 1px solid #1e293b;
+  padding: 1.25rem;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  color: #ffffff;
+}
+
+.preview-hyperstream-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.preview-status-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.preview-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+}
+
+.preview-cluster-label {
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.preview-latency-badge {
+  font-size: 0.72rem;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.preview-terminal-logs {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 6px;
+  padding: 0.65rem;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.preview-log-ack {
+  color: #10b981;
+}
+
+.preview-log-redis {
+  color: #cbd5e1;
+}
+
+.preview-log-sql {
+  color: #38bdf8;
+}
+
+.preview-metrics-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.preview-metric-box {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+.preview-metric-label {
+  font-size: 0.62rem;
+  color: #94a3b8;
+}
+
+.preview-metric-val {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.preview-metric-val.green {
+  color: #10b981;
+}
+
+.preview-metric-val.blue {
+  color: #38bdf8;
+}
+
+/* 2. CloudGate Preview */
+.preview-cloudgate {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+}
+
+.preview-cloudgate-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.preview-cloudgate-label {
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.preview-ratelimit-badge {
+  font-size: 0.72rem;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.preview-route-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.preview-route-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.72rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview-method-post {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.preview-method-get {
+  color: #0d9488;
+  font-weight: 700;
+}
+
+.preview-route-path {
+  color: #0a1128;
+  margin-left: 0.4rem;
+}
+
+.preview-route-status {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.preview-security-chips {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.preview-chip-jwt {
+  font-size: 0.68rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.preview-chip-bucket {
+  font-size: 0.68rem;
+  background: #f0fdf4;
+  color: #15803d;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.preview-chip-cache {
+  font-size: 0.68rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* 3. Nexus Preview */
+.preview-nexus {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+}
+
+.preview-nexus-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.preview-wss-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.preview-wss-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+.preview-wss-text {
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.preview-sync-badge {
+  font-size: 0.72rem;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.preview-state-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.73rem;
+}
+
+.preview-state-row {
+  display: flex;
+  justify-content: space-between;
+  color: #0a1128;
+}
+
+.preview-resolved-tag {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.preview-state-dim {
+  display: flex;
+  justify-content: space-between;
+  color: #64748b;
+}
+
+.preview-pills-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.preview-pill-blue {
+  background: #eff6ff;
+  color: #1e40af;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+}
+
+.preview-pill-slate {
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+}

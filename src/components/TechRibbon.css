@@ -1,0 +1,36 @@
+/* TechRibbon Component Styles */
+
+.tech-ribbon {
+  background: var(--bg-ribbon);
+  padding: 2.25rem 0;
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tech-ribbon-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.tech-ribbon-item {
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.tech-ribbon-item:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  color: var(--color-coral);
+}

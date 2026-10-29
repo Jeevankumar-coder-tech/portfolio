@@ -1,0 +1,144 @@
+/* Projects Component Styles */
+
+.projects-section {
+  background: #ffffff;
+  border-top: 1px solid var(--color-border);
+}
+
+.projects-filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.projects-filter-btn {
+  padding: 0.5rem 1.3rem;
+  border-radius: 9999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  color: var(--color-slate);
+  transition: all 0.2s ease;
+}
+
+.projects-filter-btn:hover {
+  border-color: var(--color-navy);
+  color: var(--color-navy);
+}
+
+.projects-filter-btn.active {
+  border-color: var(--color-navy);
+  background: var(--color-navy);
+  color: #ffffff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.project-preview-wrap {
+  position: relative;
+}
+
+.project-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.project-title {
+  font-size: 1.18rem;
+  color: var(--color-navy);
+}
+
+.project-arrow-icon {
+  color: var(--color-muted);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project-card-wrapper:hover .project-arrow-icon {
+  transform: translate(2px, -2px);
+  color: var(--color-coral);
+}
+
+.project-tagline {
+  font-size: 0.9rem;
+  color: var(--color-slate);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.project-tech-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-details-btn {
+  background: none;
+  border: none;
+  color: var(--color-coral);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.86rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.project-details-btn:hover {
+  color: var(--color-coral-hover);
+}
+
+.project-links-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-link-btn {
+  padding: 0.4rem;
+  border-radius: 6px;
+  background: #f8fafc;
+  border: 1px solid var(--color-border);
+  color: var(--color-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.project-link-btn:hover {
+  background: var(--color-navy);
+  color: #ffffff;
+  border-color: var(--color-navy);
+}

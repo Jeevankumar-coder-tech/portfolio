@@ -1,0 +1,125 @@
+/* ProjectModal Component Styles */
+
+.project-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(10, 17, 40, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.project-modal-card {
+  max-width: 680px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 50px rgba(17, 22, 37, 0.2);
+}
+
+.project-modal-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: #f8fafc;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-navy);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  z-index: 10;
+}
+
+.project-modal-close-btn:hover {
+  background: var(--color-navy);
+  color: #ffffff;
+}
+
+.project-modal-preview {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--color-border);
+}
+
+.project-modal-title {
+  font-size: 1.45rem;
+  margin-bottom: 0.35rem;
+  color: var(--color-navy);
+}
+
+.project-modal-tagline {
+  color: var(--color-coral);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-modal-desc {
+  color: var(--color-slate);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.project-modal-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-modal-metric-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.8rem;
+  border-radius: 6px;
+  background: #f8fafc;
+  border: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  color: var(--color-slate);
+}
+
+.project-modal-metric-icon {
+  color: var(--color-coral);
+  flex-shrink: 0;
+}
+
+.project-modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.75rem;
+}
+
+.project-modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-modal-action-btn {
+  flex: 1;
+}
